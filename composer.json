@@ -12,7 +12,7 @@
       "role": "Developer"
     }
   ],
-  "autoload": {
-    "exclude-from-classmap": ["/_includes/", "/_site/", "/_tmp/", "/node_modules/", "/styles/"]
+  "archive": {
+    "exclude": ["/_includes", "/_site", "/_tmp", "/node_modules", "/styles", "_includes", "_site", "_tmp", "node_modules", "styles"]
   }
 }
