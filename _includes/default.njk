@@ -13,6 +13,20 @@
     {% block head %}{% endblock %}
   </head>
   <body class="bg-gray-200">
+    {% if component %}
+      <div class="container pt-8">
+        <div class="flex flex-wrap items-start">
+          <div class="w-auto">
+            <a class="text-blue hover:text-green focus:text-green underline text-sm" href="/">← Back to all components</a>
+            <h1 class="block text-3xl font-bold mb-4 md:mb-6 leading-snug">{{ component.name }} Components</h1>
+          </div>
+          <div class="ml-auto hidden md:block">
+            <span class="block text-sm">Last Updated - <span class="font-bold">{{ page.date | readableDate }}</span></span>
+          </div>
+        </div>
+      </div>
+    {% endif %}
+
     {% block content %}
       {{ content | safe }}
     {% endblock %}
