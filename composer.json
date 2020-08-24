@@ -11,8 +11,5 @@
       "email": "dan.farrow@adtrak.co.uk",
       "role": "Developer"
     }
-  ],
-  "archive": {
-    "exclude": ["/_includes", "/_site", "/_tmp", "/node_modules", "/styles", "_includes", "_site", "_tmp", "node_modules", "styles"]
-  }
+  ]
 }
